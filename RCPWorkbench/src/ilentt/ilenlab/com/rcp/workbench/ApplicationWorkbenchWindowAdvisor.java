@@ -1,13 +1,13 @@
 package ilentt.ilenlab.com.rcp.workbench;
 
-import ilentt.ilenlab.com.rcp.editor.DeptEditor;
-import ilentt.ilenlab.com.rcp.view.DeptListView;
-import ilentt.ilenlab.com.rcp.view.DeptView;
+//import ilentt.ilenlab.com.rcp.editor.DeptEditor;
+//import ilentt.ilenlab.com.rcp.view.DeptListView;
+//import ilentt.ilenlab.com.rcp.view.DeptView;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IPartListener2;
-import org.eclipse.ui.IWorkbenchPart;
+//import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.IWorkbenchPartReference;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.application.ActionBarAdvisor;
@@ -65,9 +65,11 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			}
 			
 			// khi một view hay một editor được mở
+			
 			public void partOpened(IWorkbenchPartReference partRef) {
 				// TODO Auto-generated method stub
 				System.out.println("Part OPENED: " + partRef.getPartName());
+				/*
 				IWorkbenchPart part = partRef.getPart(false);
 				if(part instanceof DeptListView) {
 					DeptListView deptListView = (DeptListView) part;
@@ -100,7 +102,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 					if(deptListView != null)
 						deptEditor.addPropertyListener(deptListView);
 				}
-				
+				*/
 			}
 			
 			public void partInputChanged(IWorkbenchPartReference partRef) {

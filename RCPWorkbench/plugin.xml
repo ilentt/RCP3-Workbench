@@ -124,6 +124,20 @@
             name="Task"
             restorable="true">
       </view>
+      <view
+            class="ilentt.ilenlab.com.rcp.view.DeptListView"
+            icon="icons/deptlist16.png"
+            id="ilentt.ilenlab.com.rcp.view.deptlist"
+            name="Department List"
+            restorable="true">
+      </view>
+      <view
+            class="ilentt.ilenlab.com.rcp.view.DeptView"
+            icon="icons/dept16.png"
+            id="ilentt.ilenlab.com.rcp.view.dept"
+            name="Department"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.perspectiveExtensions">
@@ -137,6 +151,14 @@
                relationship="right"
                relative="org.eclipse.ui.editorss"
                showTitle="true">
+         </view>
+         <view
+               closeable="true"
+               id="ilentt.ilenlab.com.rcp.view.dept"
+               minimized="false"
+               moveable="true"
+               relationship="stack"
+               relative="ilentt.ilenlab.com.rcp.view.task">
          </view>
       </perspectiveExtension>
       <perspectiveExtension
@@ -166,6 +188,14 @@
                relative="ilentt.ilenlab.com.rcp.view.contact"
                showTitle="true">
          </view>
+         <view
+               closeable="true"
+               id="ilentt.ilenlab.com.rcp.view.deptlist"
+               minimized="false"
+               moveable="true"
+               relationship="stack"
+               relative="ilentt.ilenlab.com.rcp.view.contact">
+         </view>
       </perspectiveExtension>
    </extension>
    <extension
@@ -176,6 +206,13 @@
             icon="icons/user16.png"
             id="ilentt.ilenlab.com.rcp.editor.user"
             name="User Editor">
+      </editor>
+      <editor
+            class="ilentt.ilenlab.com.rcp.editor.DeptEditor"
+            default="false"
+            icon="icons/deptlist16.png"
+            id="ilentt.ilenlab.com.rcp.editor.depteditor"
+            name="Dept Editor">
       </editor>
    </extension>
 

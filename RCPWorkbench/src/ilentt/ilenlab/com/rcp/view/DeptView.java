@@ -5,6 +5,8 @@ import org.eclipse.ui.IPropertyListener;
 import org.eclipse.ui.part.ViewPart;
 
 public class DeptView extends ViewPart implements IPropertyListener {
+	public DeptView() {
+	}
 
 	public static final String ID = "deptView";
 
